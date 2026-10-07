@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C10100000000000000000001 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C10100000000000000000002 /* Assets.xcassets */; };
 		3B95CA2390D579FABAEFD7D0 /* LibraryStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AC4A38AB090F1E05EFFA8CD /* LibraryStore.swift */; };
 		3C9A4DB7008C3715E4801648 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7AE5C62692104A52DDD44F0 /* AppDelegate.swift */; };
 		580DF7AA2B75593F18D8D82A /* PlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34968B25C4D1FE7B29843CB7 /* PlayerView.swift */; };
@@ -21,6 +22,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C10100000000000000000002 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		19202D90D602A6DCDFD8DA27 /* VideoPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayer.swift; sourceTree = "<group>"; };
 		214755F884B551818C5D303A /* MetalFXRenderer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetalFXRenderer.swift; sourceTree = "<group>"; };
 		33DDDA4F8B4176A4D3503D16 /* LibraryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryViewController.swift; sourceTree = "<group>"; };
@@ -39,6 +41,7 @@
 		2A8D2727D41CC9DE2180F197 /* MovieFXPlayerIOS */ = {
 			isa = PBXGroup;
 			children = (
+				C10100000000000000000002 /* Assets.xcassets */,
 				A7AE5C62692104A52DDD44F0 /* AppDelegate.swift */,
 				8AC4A38AB090F1E05EFFA8CD /* LibraryStore.swift */,
 				33DDDA4F8B4176A4D3503D16 /* LibraryViewController.swift */,
@@ -87,6 +90,7 @@
 			buildConfigurationList = E749100496286500741C75AC /* Build configuration list for PBXNativeTarget "MovieFXPlayerIOS" */;
 			buildPhases = (
 				F3F5052FA58E7F7DB6C9A1FE /* Sources */,
+				C10100000000000000000003 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -131,6 +135,15 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C10100000000000000000003 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (C10100000000000000000001 /* Assets.xcassets in Resources */,);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		F3F5052FA58E7F7DB6C9A1FE /* Sources */ = {

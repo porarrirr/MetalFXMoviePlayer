@@ -44,6 +44,7 @@ targets:
       base:
         PRODUCT_BUNDLE_IDENTIFIER: com.porari.MovieFXPlayerIOS
         PRODUCT_NAME: MovieFXPlayer
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
         CODE_SIGN_STYLE: Automatic
         TARGETED_DEVICE_FAMILY: "1,2"
         SWIFT_VERSION: "5.0"

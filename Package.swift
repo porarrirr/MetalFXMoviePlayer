@@ -12,7 +12,8 @@ let package = Package(
     ],
     targets: [
         .executableTarget(
-            name: "MovieFXPlayer"
+            name: "MovieFXPlayer",
+            resources: [.copy("Resources/AppIcon.icns")]
         ),
         .testTarget(
             name: "MovieFXPlayerTests",
