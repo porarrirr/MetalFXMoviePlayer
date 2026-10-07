@@ -1,4 +1,4 @@
-# MovieFXPlayer
+# MetalFX Movie Player
 
 **日本語** | [简体中文](README.zh-CN.md)
 

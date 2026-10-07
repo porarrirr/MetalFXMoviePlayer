@@ -27,7 +27,7 @@
 		214755F884B551818C5D303A /* MetalFXRenderer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetalFXRenderer.swift; sourceTree = "<group>"; };
 		33DDDA4F8B4176A4D3503D16 /* LibraryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryViewController.swift; sourceTree = "<group>"; };
 		34968B25C4D1FE7B29843CB7 /* PlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerView.swift; sourceTree = "<group>"; };
-		47334519DBC924A5E6E57F9C /* MovieFXPlayerIOS.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = MovieFXPlayerIOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		47334519DBC924A5E6E57F9C /* MovieFXPlayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MovieFXPlayer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		81E6ABD03B278E08126DAAA3 /* PlaybackQueue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaybackQueue.swift; sourceTree = "<group>"; };
 		8AC4A38AB090F1E05EFFA8CD /* LibraryStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryStore.swift; sourceTree = "<group>"; };
 		A7AE5C62692104A52DDD44F0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -58,7 +58,7 @@
 		3F3241DCB19BE7B4717BB386 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				47334519DBC924A5E6E57F9C /* MovieFXPlayerIOS.app */,
+				47334519DBC924A5E6E57F9C /* MovieFXPlayer.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -100,7 +100,7 @@
 			packageProductDependencies = (
 			);
 			productName = MovieFXPlayerIOS;
-			productReference = 47334519DBC924A5E6E57F9C /* MovieFXPlayerIOS.app */;
+			productReference = 47334519DBC924A5E6E57F9C /* MovieFXPlayer.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
