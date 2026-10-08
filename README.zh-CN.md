@@ -5,6 +5,22 @@
 具备 视频解码 → Metal 纹理 → MetalFX Spatial → 高分辨率显示
 管线的 macOS / iOS 视频播放器。
 
+## 下载macOS应用（无需编译）
+
+**[下载v1.0.0 DMG](https://github.com/porarrirr/MetalFXMoviePlayer/releases/download/v1.0.0/MovieFX-Player-1.0.0-macOS-arm64.dmg)**
+／ [发布页面与ZIP版本](https://github.com/porarrirr/MetalFXMoviePlayer/releases/latest)
+
+要求Apple Silicon（M1及以上）和macOS 14及以上，无需安装Xcode或Swift。
+
+1. 打开DMG，将`MovieFX Player.app`拖入`Applications`。
+2. 从应用程序文件夹启动并选择视频，也可拖放视频或按Command-O。
+
+**首次启动需要允许打开。** 此版本仅使用临时签名，没有Developer ID签名，
+也未经过Apple公证。如果macOS阻止启动，请关闭提示，然后进入
+「系统设置」→「隐私与安全性」→「仍要打开」
+（[Apple官方说明](https://support.apple.com/zh-cn/102445)）。
+受管理的Mac可能不允许此操作。此下载不包含Intel Mac或iOS构建。
+
 ## 管线
 
 ```
@@ -62,7 +78,7 @@ nearest 有明显锯齿，bilinear 模糊，lanczos 虽然锐利但
 - macOS 14 及以上
 - Apple Silicon(需要 MetalFX Spatial)
 
-## 运行
+## 从源码运行（开发者）
 
 ```sh
 swift run MovieFXPlayer [video.mp4]

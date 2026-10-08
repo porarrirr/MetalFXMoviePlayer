@@ -5,6 +5,24 @@
 動画デコード → Metal テクスチャ → MetalFX Spatial → 高解像度表示
 のパイプラインを持つ macOS / iOS 動画プレイヤー。
 
+## macOSアプリをダウンロード（ビルド不要）
+
+**[v1.0.0のDMGをダウンロード](https://github.com/porarrirr/MetalFXMoviePlayer/releases/download/v1.0.0/MovieFX-Player-1.0.0-macOS-arm64.dmg)**
+／ [リリース一覧・ZIP版](https://github.com/porarrirr/MetalFXMoviePlayer/releases/latest)
+
+Apple Silicon（M1以降）、macOS 14以降に対応。XcodeやSwiftのインストールは不要です。
+
+1. DMGを開き、`MovieFX Player.app`を`Applications`へドラッグします。
+2. アプリケーションフォルダから起動して、動画を選びます。
+   動画のドラッグ＆ドロップ、⌘Oにも対応しています。
+
+**初回の起動許可が必要です。** この配布版はアドホック署名のみで、
+Developer ID署名・Apple公証はありません。macOSが起動をブロックした場合は
+警告を閉じ、「システム設定」→「プライバシーとセキュリティ」→「このまま開く」
+で許可してください（[Appleの説明](https://support.apple.com/ja-jp/102445)）。
+組織の管理下にあるMacでは許可できない場合があります。
+Intel Mac・iOS向けの配布ビルドは含みません。
+
 ## パイプライン
 
 ```
@@ -62,7 +80,7 @@ nearest はジャギー、bilinear はぼやけ、lanczos はシャープだが
 - macOS 14 以降
 - Apple Silicon(MetalFX Spatial が必要)
 
-## 実行
+## ソースから実行・ビルド（開発者向け）
 
 ```sh
 swift run MovieFXPlayer [video.mp4]
@@ -71,6 +89,11 @@ swift build && .build/debug/MovieFXPlayer path/to/video.mp4
 ```
 
 引数なしの場合はファイルパネルが開く。ドラッグ&ドロップにも対応。
+
+アプリ形式でビルドする場合は `scripts/build-macos-app.sh` を実行します。
+`.build/app/MovieFX Player.app` が生成されます。
+配布用DMG・ZIP・SHA-256一覧の生成は `scripts/package-macos-release.sh` で行い、
+出力先は `.build/releases/<バージョン>/` です。
 
 ## iOS 版
 
