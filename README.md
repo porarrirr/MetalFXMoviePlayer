@@ -1,6 +1,6 @@
 # MetalFX Movie Player
 
-**日本語** | [简体中文](README.zh-CN.md)
+**日本語** | [简体中文](README.zh-CN.md) | [English](README.en.md)
 
 動画デコード → Metal テクスチャ → MetalFX Spatial → 高解像度表示
 のパイプラインを持つ macOS / iOS 動画プレイヤー。

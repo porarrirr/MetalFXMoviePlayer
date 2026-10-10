@@ -1,6 +1,6 @@
 # MetalFX Movie Player
 
-[日本語](README.md) | **简体中文**
+[日本語](README.md) | **简体中文** | [English](README.en.md)
 
 具备 视频解码 → Metal 纹理 → MetalFX Spatial → 高分辨率显示
 管线的 macOS / iOS 视频播放器。
